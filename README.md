@@ -25,7 +25,7 @@ You will learn the role of Gradle in building Android Apps and how to use Gradle
 
 
 ### How Do I Complete this Project?
-Step 0: Starting Point
+#### Step 0: Starting Point
 This is the starting point for the final project, which is provided to you in the course repository. It contains an activity with a banner ad and a button that purports to tell a joke, but actually just complains. The banner ad was set up following the instructions here:
 
 https://developers.google.com/mobile-ads-sdk/docs/admob/android/quick-start
@@ -35,6 +35,8 @@ You may need to download the Google Repository from the Extras section of the An
 You will also notice a folder called backend in the starter code. It will be used in step 3 below, and you do not need to worry about it for now.
 
 When you can build an deploy this starter code to an emulator, you're ready to move on.
+
+<img src="https://user-images.githubusercontent.com/1282659/40273938-2af22b0a-5b90-11e8-9cf8-fa4c954c58d2.png" width="200">
 
 #### Step 1: Create a Java library
 Your first task is to create a Java library that provides jokes. Create a new Gradle Java project either using the Android Studio wizard, or by hand. Then introduce a project dependency between your app and the new Java Library. If you need review, check out demo 4.01 from the course code.
