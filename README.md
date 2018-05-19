@@ -43,6 +43,8 @@ Your first task is to create a Java library that provides jokes. Create a new Gr
 
 Make the button display a toast showing a joke retrieved from your Java joke telling library.
 
+<img src="https://user-images.githubusercontent.com/1282659/40274188-f0f179be-5b95-11e8-9b74-e125a6b82a1e.png" width="200">
+
 #### Step 2: Create an Android Library
 Create an Android Library containing an Activity that will display a joke passed to it as an intent extra. Wire up project dependencies so that the button can now pass the joke from the Java Library to the Android Library.
 
