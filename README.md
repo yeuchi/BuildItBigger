@@ -8,6 +8,8 @@ In this project, you will create an app with multiple flavors that uses multiple
 3. An Android Library containing an activity for displaying jokes
 4. An Android app that fetches jokes from the GCE module and passes them to the Android Library for display
 
+![screen shot 2018-05-19 at 1 17 14 pm](https://user-images.githubusercontent.com/1282659/40273595-7a04ceb2-5b88-11e8-9fa4-99f084d60299.png)
+
 ### Why this Project?
 As Android projects grow in complexity, it becomes necessary to customize the behavior of the Gradle build tool, allowing automation of repetitive tasks. Particularly, factoring functionality into libraries and creating product flavors allow for much bigger projects with minimal added complexity.
 
