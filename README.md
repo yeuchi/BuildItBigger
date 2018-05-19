@@ -36,19 +36,19 @@ You will also notice a folder called backend in the starter code. It will be use
 
 When you can build an deploy this starter code to an emulator, you're ready to move on.
 
-Step 1: Create a Java library
+#### Step 1: Create a Java library
 Your first task is to create a Java library that provides jokes. Create a new Gradle Java project either using the Android Studio wizard, or by hand. Then introduce a project dependency between your app and the new Java Library. If you need review, check out demo 4.01 from the course code.
 
 Make the button display a toast showing a joke retrieved from your Java joke telling library.
 
-Step 2: Create an Android Library
+#### Step 2: Create an Android Library
 Create an Android Library containing an Activity that will display a joke passed to it as an intent extra. Wire up project dependencies so that the button can now pass the joke from the Java Library to the Android Library.
 
 For review on how to create an Android library, check out demo 4.03. For a refresher on intent extras, check out;
 
 http://developer.android.com/guide/components/intents-filters.html
 
-Step 3: Setup GCE
+#### Step 3: Setup GCE
 This next task will be pretty tricky. Instead of pulling jokes directly from our Java library, we'll set up a Google Cloud Endpoints development server, and pull our jokes from there. The starter code already includes the GCE module in the folder called backend.
 
 Before going ahead you will need to be able to run a local instance of the GCE server. In order to do that you will have to install the Cloud SDK:
@@ -73,28 +73,64 @@ Now you are ready to continue!
 
 Introduce a project dependency between your Java library and your GCE module, and modify the GCE starter code to pull jokes from your Java library. Create an AsyncTask to retrieve jokes using the template included int these instructions. Make the button kick off a task to retrieve a joke, then launch the activity from your Android Library to display it.
 
-Step 4: Add Functional Tests
+#### Step 4: Add Functional Tests
 Add code to test that your Async task successfully retrieves a non-empty string. For a refresher on setting up Android tests, check out demo 4.09.
 
-Step 5: Add a Paid Flavor
+#### Step 5: Add a Paid Flavor
 Add free and paid product flavors to your app. Remove the ad (and any dependencies you can) from the paid flavor.
 
-Optional Tasks
+### Optional Tasks
 For extra practice to make your project stand out, complete the following tasks.
 
-Add Interstitial Ad
+### Add Interstitial Ad
 Follow these instructions to add an interstitial ad to the free version. Display the ad after the user hits the button, but before the joke is shown.
 
 https://developers.google.com/mobile-ads-sdk/docs/admob/android/interstitial
 
-Add Loading Indicator
+### Add Loading Indicator
 Add a loading indicator that is shown while the joke is being retrieved and disappears when the joke is ready. The following tutorial is a good place to start:
 
 http://www.tutorialspoint.com/android/android_loading_spinner.htm
 
-Configure Test Task
+### Configure Test Task
 To tie it all together, create a Gradle task that:
 
 Launches the GCE local development server
 Runs all tests
 Shuts the server down again
+
+### Submission and Evaluation
+Your project will be evaluated by a Udacity Code Reviewer according to this rubric . Be sure to review it thoroughly before you submit. All criteria must "meet specifications" in order to pass.
+
+Note: Please make sure you clean your project before creating a zip file or pushing code to a GitHub repository. You can clean your project by following these instructions.
+
+If you are using GitHub to host your projects, please make sure the code you want to submit for review is in the master branch of your repository.
+
+IMPORTANT: If you're submitting via a public Github repository, please make sure any external API key that you utilize, has been removed from your code. It's highly unsafe (and often breaks the Terms of Service) to include API keys in public repos, so you need to remove yours. You can add a note in a README file where a reviewer should go to insert their API key. Reviewers have been trained to expect this situation.
+
+IMPORTANT: Make sure not to forget to move all the hardcoded Strings in your project to the strings.xml file. If you are unsure how to do this, revisit this video in Advanced Android Apps.
+
+If you have any problems submitting your project, please email us at android-project@udacity.com. Due to the high volume of submissions, the turnaround for your project can take up to a week.
+
+Each Android ND project will be reviewed against the Common Project Requirements, in addition to its project-specific rubric.
+
+## Project Rubric
+Your project will be evaluated by a Udacity Code Reviewer according to this rubric.
+
+A summary of the rubric is provided below.
+
+### Required Components
+- Project contains a Java library for supplying jokes
+- Project contains an Android library with an activity that displays jokes passed to it as intent extras.
+- Project contains a Google Cloud Endpoints module that supplies jokes from the Java library. Project loads jokes from GCE module via an async task. Note that this GCE module doesn't need to be deployed to a server. Local testing works fine.
+- Project contains connected tests to verify that the async task is indeed loading jokes.
+- Project contains paid/free flavors. The paid flavor has no ads, and no unnecessary dependencies.
+
+### Required Behavior
+App retrieves jokes from Google Cloud Endpoints module and displays them via an Activity from the Android Library.
+Optional Components
+Once you have a functioning project, consider adding more features to test your Gradle and Android skills. Here are a few suggestions:
+
+Make the free app variant display interstitial ads between the main activity and the joke-displaying activity.
+Have the app display a loading indicator while the joke is being fetched from the server.
+Write a Gradle task that starts the GCE dev server, runs all the Android tests, and shuts down the dev server.
