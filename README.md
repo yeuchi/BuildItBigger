@@ -67,7 +67,7 @@ Start or stop your local server by using the gradle tasks as shown in the follow
 
 Once your local GCE server is started you should see the following at localhost:8080
 
-
+![screen shot 2018-05-19 at 5 22 56 pm](https://user-images.githubusercontent.com/1282659/40273631-38b379c6-5b89-11e8-9ef1-fbbb2f0e2aca.png)
 
 Now you are ready to continue!
 
