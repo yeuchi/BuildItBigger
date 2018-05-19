@@ -63,7 +63,7 @@ Note: You do not need to follow the rest of steps in the migration guide, only t
 
 Start or stop your local server by using the gradle tasks as shown in the following screenshot:
 
-
+![screen shot 2018-05-19 at 5 20 22 pm](https://user-images.githubusercontent.com/1282659/40273622-f7562e60-5b88-11e8-861e-6007da37fc4b.png)
 
 Once your local GCE server is started you should see the following at localhost:8080
 
