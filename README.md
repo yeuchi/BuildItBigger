@@ -52,6 +52,8 @@ For review on how to create an Android library, check out demo 4.03. For a refre
 
 http://developer.android.com/guide/components/intents-filters.html
 
+<img src="https://user-images.githubusercontent.com/1282659/40274841-1a5d0604-5ba7-11e8-9bf9-700b2706a5e5.png" width="200">
+
 #### Step 3: Setup GCE
 This next task will be pretty tricky. Instead of pulling jokes directly from our Java library, we'll set up a Google Cloud Endpoints development server, and pull our jokes from there. The starter code already includes the GCE module in the folder called backend.
 
