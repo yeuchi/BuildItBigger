@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.ctyeung.jokelib.FrogJoke;
+import android.content.Intent;
+import com.ctyeung.droidjokelib.JokeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        //getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -41,12 +43,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-        //Toast.makeText(this, "derp", Toast.LENGTH_SHORT).show();
 
-        TextView textView = findViewById(R.id.jokeText);
+        // step 1
         FrogJoke frogJoke = new FrogJoke();
         String jokeString = frogJoke.getJoke();
-        textView.setText(jokeString);
+        Toast.makeText(this, jokeString, Toast.LENGTH_LONG).show();
+
+        // step 2
+        Intent intent = new Intent(this, JokeActivity.class);
+        intent.putExtra(Intent.EXTRA_TEXT, jokeString);
+        startActivity(intent);
     }
 
 
