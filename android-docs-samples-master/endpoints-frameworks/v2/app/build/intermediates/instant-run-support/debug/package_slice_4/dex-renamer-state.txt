@@ -1,4 +1,0 @@
-#Sat May 26 15:58:02 CDT 2018
-base.0=/Users/ctyeung/Documents/Udacity/BuildItBigger/android-docs-samples-master/endpoints-frameworks/v2/app/build/intermediates/transforms/dexMerger/debug/5
-path.0=classes.dex
-renamed.0=classes.dex
