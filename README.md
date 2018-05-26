@@ -72,8 +72,13 @@ Start or stop your local server by using the gradle tasks as shown in the follow
 ![screen shot 2018-05-19 at 5 20 22 pm](https://user-images.githubusercontent.com/1282659/40273622-f7562e60-5b88-11e8-861e-6007da37fc4b.png)
 
 Once your local GCE server is started you should see the following at localhost:8080
+This is a bit tricky; thanks to some tips found on the forum.
+https://discussions.udacity.com/t/build-it-bigger-error-while-running-appenginedeploy-gce/653651
+1. Don’t bother with the error from appEngineDeploy.
+2. Sometime it will error onStart, execute Stop first.
+3. We don’t need to deploy it on AppEngine.. Just run it local.
 
-![screen shot 2018-05-21 at 7 28 55 pm](https://user-images.githubusercontent.com/1282659/40336139-5034a520-5d2d-11e8-9bda-cb290aa87f07.png)
+![screen shot 2018-05-26 at 2 50 08 pm](https://user-images.githubusercontent.com/1282659/40579751-bcb3ddc2-60f4-11e8-83b1-d3ade3e5e36b.png)
 
 Now you are ready to continue!
 
