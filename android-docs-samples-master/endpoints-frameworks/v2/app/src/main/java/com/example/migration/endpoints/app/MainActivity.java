@@ -57,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
             if (myApiService == null) {  // Only do this once
                 MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                         new AndroidJsonFactory(), null)
-                        .setRootUrl("http://YOUR-PROJECT-ID.appspot.com/_ah/api/")
+                        //.setRootUrl("http://YOUR-PROJECT-ID.appspot.com/_ah/api/")
+                        .setRootUrl("http://50.244.192.211:8080/_ah/api/")
                         .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                             @Override
                             public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {

@@ -30,7 +30,7 @@ limitations under the License.
     <servlet-mapping>
         <!-- LEGACY: Start of legacy section -->
         <servlet-name>SystemServiceServlet</servlet-name>
-        <url-pattern>/_ah/spi/*</url-pattern>
+        <url-pattern>/_ah/api/*</url-pattern>
         <!-- LEGACY: End of legacy section -->
     </servlet-mapping>
 <!-- [END web_xml] -->
