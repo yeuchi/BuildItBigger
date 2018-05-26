@@ -82,6 +82,10 @@ https://discussions.udacity.com/t/build-it-bigger-error-while-running-appengined
 
 Now you are ready to continue!
 
+Here is my app retrieving the message from backend example.
+
+<img src="https://user-images.githubusercontent.com/1282659/40580318-68d474ac-6101-11e8-8465-ea2230286482.png" width="200">
+
 Introduce a project dependency between your Java library and your GCE module, and modify the GCE starter code to pull jokes from your Java library. Create an AsyncTask to retrieve jokes using the template included int these instructions. Make the button kick off a task to retrieve a joke, then launch the activity from your Android Library to display it.
 
 #### Step 4: Add Functional Tests
