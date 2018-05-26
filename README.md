@@ -87,8 +87,7 @@ Introduce a project dependency between your Java library and your GCE module, an
 (left) is my app retrieving the message from backend example.
 (right) backend is retrieving joke from jokeLib.
 
-<img src="https://user-images.githubusercontent.com/1282659/40580318-68d474ac-6101-11e8-8465-ea2230286482.png" width="200">
-<img src="https://user-images.githubusercontent.com/1282659/40580442-c3f6ca04-6103-11e8-9e95-d4c077589a96.png" width="200">
+<img src="https://user-images.githubusercontent.com/1282659/40580318-68d474ac-6101-11e8-8465-ea2230286482.png" width="200"><img src="https://user-images.githubusercontent.com/1282659/40580442-c3f6ca04-6103-11e8-9e95-d4c077589a96.png" width="200">
 
 #### Step 4: Add Functional Tests
 Add code to test that your Async task successfully retrieves a non-empty string. For a refresher on setting up Android tests, check out demo 4.09.
