@@ -95,6 +95,11 @@ Add code to test that your Async task successfully retrieves a non-empty string.
 ![test](https://user-images.githubusercontent.com/1282659/40581536-f9ebe960-6120-11e8-9bfc-f0aae299f789.png)
 
 #### Step 5: Add a Paid Flavor
+
+Select the variant to see and edit free vs paid files.
+
+![variant](https://user-images.githubusercontent.com/1282659/40588046-5343dbae-619d-11e8-8154-43627c930775.png)
+
 Add free and paid product flavors to your app. Remove the ad (and any dependencies you can) from the paid flavor.
 
 <img src="https://user-images.githubusercontent.com/1282659/40588009-ce61d86e-619c-11e8-9775-654726f84417.png" width="200">
