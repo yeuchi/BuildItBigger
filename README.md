@@ -102,8 +102,7 @@ Select the build variant to see (edit) free vs paid files.
 
 Add free and paid product flavors to your app. Remove the ad (and any dependencies you can) from the paid flavor.
 
-<img src="https://user-images.githubusercontent.com/1282659/40588009-ce61d86e-619c-11e8-9775-654726f84417.png" width="200">
-<img src="https://user-images.githubusercontent.com/1282659/40588010-d02513c8-619c-11e8-8dd3-0ee2e46b2b8f.png" width="200">
+<img src="https://user-images.githubusercontent.com/1282659/40588009-ce61d86e-619c-11e8-9775-654726f84417.png" width="200"><img src="https://user-images.githubusercontent.com/1282659/40588010-d02513c8-619c-11e8-8dd3-0ee2e46b2b8f.png" width="200">
 
 
 ### Optional Tasks
