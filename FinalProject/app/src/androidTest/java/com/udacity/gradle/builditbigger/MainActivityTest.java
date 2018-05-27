@@ -57,7 +57,7 @@ public class MainActivityTest {
          * 3. verify text...
          */
 
-        onView(withId(R.id.backend_button))        // withId(R.id.my_view) is a ViewMatcher
+        onView(withId(R.id.backend_button))
                 .perform(click());
 
         onView(withText(R.string.joke_string)).inRoot(withDecorView(not(is(mActivityRule.getActivity().getWindow().getDecorView())))).check(matches(isDisplayed()));
