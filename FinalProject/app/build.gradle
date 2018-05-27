@@ -32,7 +32,7 @@ android {
         }
     }
 
-    /*
+
     flavorDimensions "tier"
 
     productFlavors {
@@ -44,7 +44,7 @@ android {
             applicationId "com.udacity.gradle.builditbigger.paid"
             dimension "tier"
         }
-    }*/
+    }
 }
 
 dependencies {
