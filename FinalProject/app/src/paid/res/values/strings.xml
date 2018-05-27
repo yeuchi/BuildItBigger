@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Build it Bigger</string>
+    <string name="my_name">Yeuchi</string>
+    <string name="instructions">Press the button for a delicious joke!</string>
+    <string name="button_text">Step 2: Tell Joke</string>
+    <string name="backend_text">Step 3: Backend Joke</string>
+    <string name="action_settings">Settings</string>
+    <string name="joke_string">"Minnesota Hello..., Yeuchi
+joke: When does a frog celebrates birthday ?
+
+
+...on leap year "</string>
+</resources>

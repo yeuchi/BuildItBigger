@@ -23,7 +23,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    protected Context mContext;
+    static Context mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         this.mContext = this;
@@ -76,16 +76,20 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, jokeString, Toast.LENGTH_LONG).show();
 
         // step 2
-        Intent intent = new Intent(this, JokeActivity.class);
-        intent.putExtra(Intent.EXTRA_TEXT, jokeString);
-        startActivity(intent);
+        //Intent intent = new Intent(this, JokeActivity.class);
+        //intent.putExtra(Intent.EXTRA_TEXT, jokeString);
+        //startActivity(intent);
 
     }
 
-
-    class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
+    public static class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
         private MyApi myApiService = null;
         private Context context;
+
+        public Context GetContext()
+        {
+            return context;
+        }
 
         @Override
         protected String doInBackground(Pair<Context, String>... params) {
@@ -118,8 +122,13 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(String result) {
-            Toast.makeText(context, result, Toast.LENGTH_LONG).show();
+        protected void onPostExecute(String jokeString) {
+            Toast.makeText(context, jokeString, Toast.LENGTH_LONG).show();
+
+            // step 2 moved here per reviewer's suggestion
+            Intent intent = new Intent(mContext, JokeActivity.class);
+            intent.putExtra(Intent.EXTRA_TEXT, jokeString);
+            mContext.startActivity(intent);
         }
     }
 }

@@ -22,6 +22,10 @@ public class JokeActivity extends AppCompatActivity {
     private String parseExtra()
     {
         String jokeString = this.getIntent().getStringExtra(Intent.EXTRA_TEXT);
+
+        if(null==jokeString || 0==jokeString.length())
+            jokeString = getResources().getString(R.string.null_joke);
+
         return jokeString;
     }
 }

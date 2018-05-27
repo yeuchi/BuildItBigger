@@ -15,6 +15,7 @@ import org.junit.Rule;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
+import android.util.Pair;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
@@ -28,9 +29,13 @@ import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.RootMatchers.withDecorView;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
+import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertTrue;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
-
+import junit.framework.Assert.*;
+import java.util.concurrent.CountDownLatch;
+import com.udacity.gradle.builditbigger.MainActivity.EndpointsAsyncTask;
 /**
  * Reference:
  *
@@ -68,4 +73,31 @@ public class MainActivityTest {
 
     }
 
+    @Test
+    public void testVerifyJoke() throws InterruptedException {
+        assertTrue(true);
+
+        final CountDownLatch latch = new CountDownLatch(1);
+
+        final Context context = mActivityRule.getActivity().getApplicationContext();
+        EndpointsAsyncTask testTask = new EndpointsAsyncTask() {
+
+            @Override
+            protected void onPostExecute(String result) {
+
+                assertNotNull(result);
+
+                if (result != null)
+                {
+                    String expected = context.getResources().getString(R.string.joke_string);
+                    assertEquals(expected, result);
+                    latch.countDown();
+                }
+            }
+        };
+
+        String myName = context.getResources().getString( R.string.my_name );
+        testTask.execute(new Pair<Context, String>(context, myName));
+        latch.await();
+    }
 }
