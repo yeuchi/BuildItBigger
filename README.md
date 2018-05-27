@@ -160,3 +160,8 @@ Once you have a functioning project, consider adding more features to test your 
 Make the free app variant display interstitial ads between the main activity and the joke-displaying activity.
 Have the app display a loading indicator while the joke is being fetched from the server.
 Write a Gradle task that starts the GCE dev server, runs all the Android tests, and shuts down the dev server.
+
+### References
+
+1. "This is a test to show how to use expresso to check if a toast was displayed" by Bruno de Lima e Silva (brunodles), GithubGist
+https://gist.github.com/brunodles/badaa6de2ad3a84138d517795f15efc7
