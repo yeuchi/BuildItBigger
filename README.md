@@ -96,7 +96,7 @@ Add code to test that your Async task successfully retrieves a non-empty string.
 
 #### Step 5: Add a Paid Flavor
 
-Select the variant to see and edit free vs paid files.
+Select the build variant to see (edit) free vs paid files.
 
 ![variant](https://user-images.githubusercontent.com/1282659/40588046-5343dbae-619d-11e8-8154-43627c930775.png)
 
