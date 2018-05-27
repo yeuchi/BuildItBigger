@@ -23,10 +23,10 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    protected Context context;
+    protected Context mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        this.context = this;
+        this.mContext = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 // step 3
-                new EndpointsAsyncTask().execute(new Pair<Context, String>(context, "Yeuchi"));
+                String myName = getResources().getString( R.string.my_name );
+                new EndpointsAsyncTask().execute(new Pair<Context, String>(mContext, myName));
             }
         });
     }

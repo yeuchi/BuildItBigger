@@ -31,26 +31,30 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 
+/**
+ * Reference:
+ *
+ * Testing toast is defined and demonstrated by Bruno de Lima e Silva on Github
+ * https://gist.github.com/brunodles/badaa6de2ad3a84138d517795f15efc7
+ */
+
 @RunWith(AndroidJUnit4.class)
 public class MainActivityTest {
 
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(
             MainActivity.class);
-
+/*
     @Test
     public void useAppContext() throws Exception {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("com.udacity.gradle.builditbigger", appContext.getPackageName());
-    }
+    } */
 
     @Test
     public void testBackendRetrieveJoke() {
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getTargetContext();
-
         /*
          * 1. need a way to click the button
          * 2. need a way to capture text from toast
