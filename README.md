@@ -36,7 +36,7 @@ You will also notice a folder called backend in the starter code. It will be use
 
 When you can build an deploy this starter code to an emulator, you're ready to move on.
 
-<img src="https://user-images.githubusercontent.com/1282659/40273938-2af22b0a-5b90-11e8-9cf8-fa4c954c58d2.png" width="200">
+<img src="https://user-images.githubusercontent.com/1282659/40581472-bc56d12a-611e-11e8-9225-44e7263e1356.png" width="200">
 
 #### Step 1: Create a Java library
 Your first task is to create a Java library that provides jokes. Create a new Gradle Java project either using the Android Studio wizard, or by hand. Then introduce a project dependency between your app and the new Java Library. If you need review, check out demo 4.01 from the course code.
@@ -87,7 +87,7 @@ Introduce a project dependency between your Java library and your GCE module, an
 (left) is my app retrieving the message from backend example.
 (right) backend is retrieving joke from jokeLib.
 
-<img src="https://user-images.githubusercontent.com/1282659/40580318-68d474ac-6101-11e8-8465-ea2230286482.png" width="200"><img src="https://user-images.githubusercontent.com/1282659/40580442-c3f6ca04-6103-11e8-9e95-d4c077589a96.png" width="200">
+<img src="https://user-images.githubusercontent.com/1282659/40580318-68d474ac-6101-11e8-8465-ea2230286482.png" width="200"><img src="https://user-images.githubusercontent.com/1282659/40581478-0c76b4d6-611f-11e8-84fa-29f1892fd1d4.png" width="200">
 
 #### Step 4: Add Functional Tests
 Add code to test that your Async task successfully retrieves a non-empty string. For a refresher on setting up Android tests, check out demo 4.09.
