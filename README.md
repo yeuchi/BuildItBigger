@@ -92,7 +92,7 @@ Introduce a project dependency between your Java library and your GCE module, an
 #### Step 4: Add Functional Tests
 Add code to test that your Async task successfully retrieves a non-empty string. For a refresher on setting up Android tests, check out demo 4.09.
 
-![test](https://user-images.githubusercontent.com/1282659/40581484-41afe6a4-611f-11e8-8a67-7f1cb4df768a.png)
+![test](https://user-images.githubusercontent.com/1282659/40581536-f9ebe960-6120-11e8-9bfc-f0aae299f789.png)
 
 #### Step 5: Add a Paid Flavor
 Add free and paid product flavors to your app. Remove the ad (and any dependencies you can) from the paid flavor.
