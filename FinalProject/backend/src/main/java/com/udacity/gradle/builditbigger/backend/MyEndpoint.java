@@ -27,7 +27,19 @@ public class MyEndpoint {
         String jokeString = frogJoke.getJoke();
 
         MyBean response = new MyBean();
-        response.setData("Minnesota Hello..., " + name + "\njoke: " + jokeString);
+        response.setData("SayHi..., " + name);
+
+        return response;
+    }
+
+    @ApiMethod(name = "getJokes")
+    public MyBean getJokes() {
+
+        FrogJoke frogJoke = new FrogJoke();
+        String jokeString = frogJoke.getJoke();
+
+        MyBean response = new MyBean();
+        response.setData("joke: " + jokeString);
 
         return response;
     }
