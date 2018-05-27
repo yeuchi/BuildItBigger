@@ -19,6 +19,7 @@ import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
 import java.io.IOException;
 import android.content.Context;
 import android.util.Pair;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +29,18 @@ public class MainActivity extends AppCompatActivity {
         this.context = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+        Button send_bn = (Button) findViewById(R.id.backend_button);
+        send_bn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                // step 3
+                new EndpointsAsyncTask().execute(new Pair<Context, String>(context, "Yeuchi"));
+            }
+        });
     }
 
 
@@ -59,15 +72,13 @@ public class MainActivity extends AppCompatActivity {
         // step 1
         FrogJoke frogJoke = new FrogJoke();
         String jokeString = frogJoke.getJoke();
-        //Toast.makeText(this, jokeString, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, jokeString, Toast.LENGTH_LONG).show();
 
         // step 2
         Intent intent = new Intent(this, JokeActivity.class);
         intent.putExtra(Intent.EXTRA_TEXT, jokeString);
         startActivity(intent);
 
-        // step 3
-        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, "Yeuchi"));
     }
 
 
