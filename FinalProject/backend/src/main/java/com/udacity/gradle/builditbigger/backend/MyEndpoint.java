@@ -19,6 +19,21 @@ import com.ctyeung.jokelib.FrogJoke;
 )
 public class MyEndpoint {
 
+    /*
+     * here is the method for class project !
+     */
+    @ApiMethod(name = "getJokes")
+    public MyBean getJokes() {
+
+        FrogJoke frogJoke = new FrogJoke();
+        String jokeString = frogJoke.getJoke();
+
+        MyBean response = new MyBean();
+        response.setData("joke: " + jokeString);
+
+        return response;
+    }
+
     /** A simple endpoint method that takes a name and says Hi back */
     @ApiMethod(name = "sayHi")
     public MyBean sayHi(@Named("name") String name) {
@@ -32,16 +47,6 @@ public class MyEndpoint {
         return response;
     }
 
-    @ApiMethod(name = "getJokes")
-    public MyBean getJokes() {
 
-        FrogJoke frogJoke = new FrogJoke();
-        String jokeString = frogJoke.getJoke();
-
-        MyBean response = new MyBean();
-        response.setData("joke: " + jokeString);
-
-        return response;
-    }
 
 }
